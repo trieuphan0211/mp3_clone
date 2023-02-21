@@ -1,4 +1,8 @@
 const player = {
+    render:function(){
+        $('.player').innerHTML = `
+        `
+    },
     event: function() {
         const heart_icon = $('.song-intro_icon')
         heart_icon.onclick = function() {
@@ -32,6 +36,7 @@ const player = {
         }
     },
     start:function(){
+        // this.render()
         this.event()
     }
 }
