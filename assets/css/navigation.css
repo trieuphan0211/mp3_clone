@@ -1,0 +1,139 @@
+/* css Navigation */
+.nav,.body{
+    width: 100%;
+    height: var( --height-percent);
+    
+}
+
+.nav{
+    flex-direction: column;
+    background-color: #221a2d;
+    flex:1 260px;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.nav_icon{
+    width: 60%;
+    height: 70px;
+    padding:10px 0 0 20px;
+    
+
+}
+
+.list_item{
+    list-style: none;
+    min-width:240px ;
+    text-decoration: none;
+    display: block;
+    padding: 8px 25px;
+    position: relative;
+}
+.list_item:hover{
+    color: var(--while-color);
+    cursor: pointer;
+    /* opacity: 0.7; */
+}
+.list_item_transform{
+   
+}
+.list_item-focus{
+    background-color: #40384e;
+    color: var(--while-color);
+}
+.list_item-focus::before{
+    content: "";
+    display: block;
+    height: 3.6rem;
+    width: 3px;
+    margin: auto 0;
+    background-color: var(--purple-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    
+}
+.list_item-icon-hover{
+    font-size: 1.9rem;
+    float: right;
+    display:none !important;
+}
+.list_item:hover .list_item-icon-hover{
+    display: block !important;
+}
+.list_item-icon{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.nav_intro{
+    margin-bottom: 15px;
+}
+.nav-divide{
+    display: block;
+    width: calc(100% - 30px);
+    opacity: 0.2;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--main-color);
+}
+/* span radio live */
+.radio-live{
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;;
+    margin:0 0 4px 10px;
+    font-size: 0.9rem;
+    line-height: 15px;
+    width: 35px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: red;
+}
+/* list-second */
+.nav_personintro{
+    padding-top: 15px;
+    overflow-y: scroll;
+    /* display: hidden; */
+}
+.box-ads{
+    height: 110px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    /* justify-content: center; */
+    background-image: linear-gradient(to right,#5b4be6,#a15cc4);
+    border-radius: 15px;
+}
+.box-ads p{
+    padding: 15px 0;
+}
+.box-ads button{
+    border-radius: 15px;
+    width: 160px;
+    height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    background-color: #DCDC03;
+    border: none;
+}
+.box-ads button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.list_item-title{
+    text-transform: uppercase ;
+    color: var(--while-color);
+}
+.nav_addPlayList{
+    height: 54px;
+    line-height: calc(54px - 16px);
+    text-align: right center;
+    font-size: 1.5rem;
+    /* padding: 8px 25px 8px 20px; */
+}
+

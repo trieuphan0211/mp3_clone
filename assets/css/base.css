@@ -1,0 +1,55 @@
+:root{
+    --while-color: #fff;
+    --main-color:#dcc1ea;
+    --black-color:#000;
+    --text-color: #333;
+    --height-percent: 90vh;
+    --purple-color:#9b4de0;
+}
+
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0; 
+    overflow: hidden;
+}
+
+html{
+    /* HACK */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid-row{
+    display: flex;
+    flex-direction: row;
+
+}
+.grid-column{
+    display: flex;
+    flex-direction: column;
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+  
+  } */
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #836EA1; 
+  }
+
