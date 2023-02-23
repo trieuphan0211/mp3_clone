@@ -4,6 +4,7 @@ const player = {
         `
     },
     event: function() {
+        const _this = this;
         const heart_icon = $('.song-intro_icon')
         heart_icon.onclick = function() {
             if($('.fa-solid.fa-heart')){
@@ -26,6 +27,11 @@ const player = {
             
             }
         }
+        // oppen suboption
+        const suboption = $('.song-intro_icon--option')
+        suboption.onclick = function() {
+            $('.song-intro_suboption').classList.toggle('display-none');
+        }
         if($('#heart-solid').className == 'fa-solid fa-heart'){
             console.log('heart')
             $('#heart-solid').setAttribute('style', 'color: #b26ad9;');
@@ -34,6 +40,7 @@ const player = {
             console.log('no')
             $('#heart-solid').removeAttribute('style');
         }
+
     },
     start:function(){
         // this.render()

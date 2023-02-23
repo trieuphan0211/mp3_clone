@@ -23,6 +23,7 @@
 }
 .song-intro_name,
 .suboption_name{
+    color: var(--while-color);
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -60,13 +61,16 @@
 }
 /* suboption */
 .song-intro_suboption{
+    color: #d0ccd6;
     background-color: #34224f;
     position: absolute;
     border-radius: 10px;
     bottom: 75px;
     width: 285px;
     left: 250px;
-    padding: 0 15px;
+}
+.suboption_intro,.suboption_option{
+    margin: 0 15px;
 }
 .suboption_intro{
     display: flex;
@@ -80,6 +84,46 @@
 .suboption_img{
     width: 40px;
     border-radius: 5px;
+}
+.suboption_option{
+    display: flex;
+    background-color: rgb(89,75,111,0.7);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.suboption_option-item{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.suboption_option-item:hover,
+.song-intro_suboption-item:hover{
+    background-color: rgb(89,75,111);
+    color: var(--while-color);
+    
+}
+.suboption_option-item i{
+    padding: 5px;
+    display: block;
+    font-size: 14px;
+}
+.suboption_option-item span{
+    font-size: 1.0rem;
+}
+.song-intro_suboption-item{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+}
+
+.song-intro_suboption-item i{
+    margin-right: 15px;
 }
 /* play song */
 .song-play{
